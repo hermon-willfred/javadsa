@@ -11,9 +11,7 @@ public class binarysearch{
         int low=0;
         int high=n-1;
         while(low <= high){
-
             int mid = (low + high) / 2;
-
             if(arr[mid] == target){
                 System.out.println("Element found at index " + mid);
                 return;
@@ -25,7 +23,6 @@ public class binarysearch{
                 high = mid - 1;
             }
         }
-
         System.out.println("Element not found");
     }
 }
